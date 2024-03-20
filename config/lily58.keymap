@@ -7,6 +7,7 @@
 #include "keys_sv.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -22,11 +23,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                                                        &kp N6  &kp N7    &kp N8        &kp N9         &kp N0             &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                                                         &kp Y   &kp U     &kp I         &kp O          &kp P              &kp SV_A_RING
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                                                         &kp H   &kp J     &kp K         &kp L          &kp SV_O_UMLAUT    &kp SV_A_UMLAUT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt SV_LEFT_BRACKET SV_LEFT_PARENTHESIS    &mt SV_RIGHT_BRACKET SV_RIGHT_PARENTHESIS  &kp N   &kp M     &kp SV_COMMA  &kp SV_PERIOD  &kp SV_UNDERSCORE  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE                                  &kp RET                                    &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                                                        &kp N6  &kp N7     &kp N8        &kp N9         &kp N0             &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                                                         &kp Y   &kp U      &kp I         &kp O          &kp P              &kp SV_A_RING
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                                                         &kp H   &lt 1 J    &kp K         &kp L          &kp SV_O_UMLAUT    &kp SV_A_UMLAUT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt SV_LEFT_BRACKET SV_LEFT_PARENTHESIS    &mt SV_RIGHT_BRACKET SV_RIGHT_PARENTHESIS  &kp N   &kp M      &kp SV_COMMA  &kp SV_PERIOD  &kp SV_UNDERSCORE  &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 1   &kp BACKSPACE                              &kp SPACE                                  &mo 2   &kp ENTER  &kp RGUI
             >;
         };
 
@@ -39,11 +40,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1          &kp F2              &kp F3                           &kp F4                     &kp F5                          &kp F6                                                   &kp F7     &kp F8     &kp F9  &kp F10  &kp F11       &kp F12
-&kp SV_SECTION  &kp SV_EXCLAMATION  &mt SV_AT_SIGN SV_DOUBLE_QUOTES  &mt SV_POUND_SIGN SV_HASH  &mt SV_CURRENCY_SIGN SV_DOLLAR  &kp SV_PERCENT                                           &trans     &trans     &trans  &trans   &kp SV_PLUS   &mt SV_CARET SV_TILDE
-&trans          &trans              &trans                           &trans                     &trans                          &trans                                                   &kp CARET  &kp AMPS   &trans  &trans   &kp SV_MINUS  &mt SV_ASTRK SV_SINGLE_QUOTE
-&trans          &trans              &trans                           &trans                     &trans                          &trans          &kp SV_LESS_THAN    &kp SV_GREATER_THAN  &trans     &kp MINUS  &trans  &trans   &kp EQUAL     &kp PIPE
-                                                                     &trans                     &trans                          &trans          &trans              &trans               &trans     &trans     &trans
+&kp F1          &kp F2              &kp F3                           &kp F4                     &kp F5                          &kp F6                                                   &kp F7     &kp F8       &kp F9  &kp F10  &kp F11       &kp F12
+&kp SV_SECTION  &kp SV_EXCLAMATION  &mt SV_AT_SIGN SV_DOUBLE_QUOTES  &mt SV_POUND_SIGN SV_HASH  &mt SV_CURRENCY_SIGN SV_DOLLAR  &kp SV_PERCENT                                           &trans     &kp SV_FSLH  &trans  &trans   &kp SV_PLUS   &mt SV_CARET SV_TILDE
+&trans          &trans              &trans                           &trans                     &trans                          &trans                                                   &kp CARET  &kp AMPS     &trans  &trans   &kp SV_MINUS  &mt SV_ASTRK SV_SINGLE_QUOTE
+&trans          &trans              &trans                           &trans                     &trans                          &trans          &kp SV_LESS_THAN    &kp SV_GREATER_THAN  &trans     &kp MINUS    &trans  &trans   &kp EQUAL     &kp PIPE
+                                                                     &trans                     &trans                          &trans          &trans              &trans               &trans     &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -58,11 +59,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans                    &trans       &trans        &trans        &trans        &trans        &trans
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH
-                           &trans  &trans  &trans  &trans    &trans  &trans       &trans        &trans
+&trans     &trans  &trans  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp GRAVE  &trans  &trans  &trans            &trans             &trans                               &trans      &trans        &trans        &trans        &trans        &trans
+&trans     &trans  &trans  &trans            &trans             &trans                               &trans      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans     &trans  &trans  &trans            &trans             &trans             &trans    &trans  &trans      &trans        &trans        &trans        &trans        &trans
+                           &trans            &trans             &trans             &trans    &trans  &trans      &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
