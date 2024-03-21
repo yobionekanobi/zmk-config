@@ -46,11 +46,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                                                        &kp N6  &kp N7     &kp N8        &kp N9         &kp N0           &kp DELETE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                                                         &kp Y   &kp U      &kp I         &kp O          &kp P            &kp SV_A_RING
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                                                         &kp H   &lt 1 J    &kp K         &kp L          &kp SV_O_UMLAUT  &kp SV_A_UMLAUT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt SV_LEFT_BRACKET SV_LEFT_PARENTHESIS    &mt SV_RIGHT_BRACKET SV_RIGHT_PARENTHESIS  &kp N   &kp M      &kp SV_COMMA  &kp SV_PERIOD  &kp MINUS        &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp BACKSPACE                              &kp SPACE                                  &mo 2   &kp ENTER  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                                                        &kp N6  &kp N7     &kp N8         &kp N9         &kp N0           &kp DELETE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                                                         &kp Y   &kp U      &kp I          &kp O          &kp P            &kp SV_A_RING
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                                                         &kp H   &lt 1 J    &kp K          &kp L          &kp SV_O_UMLAUT  &kp SV_A_UMLAUT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt SV_LEFT_BRACKET SV_LEFT_PARENTHESIS    &mt SV_RIGHT_BRACKET SV_RIGHT_PARENTHESIS  &kp N   &kp M      &kp SV_COMMA   &kp SV_PERIOD  &kp MINUS        &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 1   &kp BACKSPACE                              &kp SPACE                                  &mo 2   &kp ENTER  &kp RIGHT_ALT
             >;
         };
 
