@@ -66,7 +66,7 @@
 &kp F1          &kp F2              &kp F3                           &kp F4                     &kp F5                          &kp F6                                                   &kp F7            &kp F8       &kp F9  &kp F10  &kp F11       &kp F12
 &kp SV_SECTION  &kp SV_EXCLAMATION  &mt SV_AT_SIGN SV_DOUBLE_QUOTES  &mt SV_POUND_SIGN SV_HASH  &mt SV_CURRENCY_SIGN SV_DOLLAR  &kp SV_PERCENT                                           &trans            &kp SV_FSLH  &trans  &trans   &kp SV_PLUS   &mt SV_CARET SV_TILDE
 &trans          &trans              &trans                           &trans                     &trans                          &trans                                                   &kp SV_AMPERSAND  &trans       &trans  &trans   &kp SV_MINUS  &mt SV_ASTRK SV_SINGLE_QUOTE
-&trans          &trans              &trans                           &trans                     &trans                          &trans          &kp SV_LESS_THAN    &kp SV_GREATER_THAN  &trans            &kp MINUS    &trans  &trans   &kp EQUAL     &kp PIPE
+&vt_left        &vt_right           &vt_add                          &trans                     &trans                          &trans          &kp SV_LESS_THAN    &kp SV_GREATER_THAN  &trans            &kp MINUS    &trans  &trans   &kp EQUAL     &kp PIPE
                                                                      &trans                     &trans                          &trans          &trans              &trans               &trans            &trans       &trans
             >;
 
