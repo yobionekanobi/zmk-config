@@ -11,6 +11,29 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        vt_left: vt_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LEFT_ARROW))>;
+            label = "VT_LEFT";
+        };
+
+        vt_right: vt_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            label = "VT_RIGHT";
+        };
+
+        vt_add: vt_add {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(D))>;
+            label = "VT_ADD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
